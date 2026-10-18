@@ -1,0 +1,27 @@
+{
+  "name": "feedsystem-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19",
+    "react-dom": "^19",
+    "react-router-dom": "^7",
+    "spark-md5": "^3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/spark-md5": "^3",
+    "@vitejs/plugin-react": "latest",
+    "tailwindcss": "^4",
+    "typescript": "~5.9",
+    "vite": "^8"
+  }
+}
