@@ -117,7 +117,3 @@ bash test/smoke.sh
 ```
 
 覆盖 57 个断言：注册/登录/刷新/上传/发布/五种 Feed/点赞异步落库/评论删除权限/关注/关注流推拉结合（收件箱推、大V发件箱拉、关注回填、取关清理）/私信/通知/SSE/分片断点续传/改名换 token/登出撤销。注意注册限流为 5 次/时/IP，脚本会自动清掉 Redis 中的历史限流计数。
-
-## 与 Go 版的差异
-
-- 后端从 Gin + GORM 迁移为 Express 5 + Drizzle ORM（Router/Service 分层，中间件鉴权/限流；查询构建器贴近 SQL、类型从表结构推导；启动时 `CREATE TABLE IF NOT EXISTS` 完成 AutoMigrate）。
