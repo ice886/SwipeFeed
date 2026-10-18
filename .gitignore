@@ -1,0 +1,18 @@
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# 运行时数据（上传文件/本地数据）
+.run/
+*.log
+
+# 环境变量（保留 .env.example）
+.env
+.env.local
+
+# 系统与编辑器
+.DS_Store
+.idea/
+.vscode/
