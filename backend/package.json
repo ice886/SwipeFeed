@@ -1,0 +1,31 @@
+{
+  "name": "feedsystem-video-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "短视频 Feed 系统 Node.js 后端：Express + MySQL + Redis + RabbitMQ（API / Worker 双进程）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/main.js",
+    "worker": "node dist/worker-main.js"
+  },
+  "dependencies": {
+    "amqplib": "^2.2.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "drizzle-orm": "^0.45.4",
+    "express": "^5.1.0",
+    "ioredis": "^6.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.4.0",
+    "mysql2": "^3.24.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.3.0",
+    "@types/node": "^24.0.0",
+    "typescript": "~5.9.3"
+  }
+}
